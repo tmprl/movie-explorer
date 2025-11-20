@@ -30,9 +30,15 @@ h1.logo {
     text-shadow:  2px 2px 5px rgba(0, 0, 0, 0.3);
 
     border: 3px solid #C6A0F6;
-    border-radius: 20px;
+    border-radius: 10px 20px 10px 20px;
     padding: 10px 20px; 
-    display: inline-block  
+    transition: all 0.3s ease;
+}
+
+
+h1.logo:hover {
+    border-color: #B7BDF8;
+    box-shadow: 0 0 2vh #C6A0F6;
 }
 
 
@@ -56,13 +62,39 @@ h1.logo {
     border: 3px solid #C6A0F6;
     border-radius: 30px;
     padding: 10px 20px; 
+    transition: all 0.3s ease;
 }
 
 input::placeholder {
     color: #B7BDF8;
-    opacity: 1;
+    opacity: 0.5;
     font-style: italic;
     font-size: 1.3vw;
 }
 
+input:focus {
+    outline: none;
+    background-color: #45466B;
+    box-shadow: 0 0 0.5vw #C6A0F6;
+}
 
+#btn-search {
+    background-color: #C6A0F6;   
+    color: #1E1E2E;              
+    border: none;                
+    border-radius: clamp(6px, 0.8vw, 12px);      
+    padding: clamp(6px, 0.8vh, 12px) clamp(12px, 1.5vw, 20px);     
+    font-size: clamp(14px, 1.2vw, 18px);           
+    font-weight: 600;
+    cursor: pointer;             
+    transition: all 0.3s ease-in-out;   
+}
+
+#btn-search:hover {
+    background-color: #B7BDF8;   
+}
+
+#btn-search:active {
+    transform: scale(0.97);     /* плавное уменьшение при нажатии */
+    transition: transform 0.1s ease; /* быстрее для нажатия */
+}
