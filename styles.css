@@ -1,0 +1,14 @@
+body {
+    background-color: #24273A;
+}
+
+.header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box {
+    display:flex;
+    gap: 10px;
+}
