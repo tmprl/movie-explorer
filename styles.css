@@ -1,14 +1,52 @@
-body {
-    background-color: #24273A;
+@font-face {
+    font-family: 'Heebo';
+    src: url(./fonts/Heebo-Light.woff2) format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Heebo';
+    src: url(./fonts/Heebo-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    font-family: 'Heebo', sans-serif;   
+    background-color: #24273A;
+    padding: 2vw 4vh;
+    color: #fff;
+}
+
+
+h1.logo {
+    color:white;
+    font-size: 3rem;
+    color: #C6A0F6;  
+    letter-spacing: 1px;
+    text-shadow:  2px 2px 5px rgba(0, 0, 0, 0.3);
+
+    border: 3px solid #C6A0F6;
+    border-radius: 20px;
+    padding: 10px 20px; 
+    display: inline-block  
+}
+
 
 .header {
     display:flex;
     align-items: center;
-    justify-content: space-between;
+    position: relative;
 }
 
 .search-box {
-    display:flex;
-    gap: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex;
+    column-gap: 10px;
 }
