@@ -35,7 +35,6 @@ h1.logo {
     transition: all 0.3s ease;
 }
 
-
 h1.logo:hover {
     border-color: #B7BDF8;
     box-shadow: 0 0 2vh #C6A0F6;
@@ -48,6 +47,12 @@ h1.logo:hover {
     justify-content: space-between;
 }
 
+.header img {
+    width:50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .search-box {
     display: flex;
     column-gap: 10px;
@@ -58,6 +63,7 @@ h1.logo:hover {
     letter-spacing: 1px;
     background-color: #2A2C3F;
     color: #fff;
+    outline: none;
 
     border: 3px solid #C6A0F6;
     border-radius: 30px;
@@ -95,6 +101,10 @@ input:focus {
 }
 
 #btn-search:active {
-    transform: scale(0.97);     /* плавное уменьшение при нажатии */
-    transition: transform 0.1s ease; /* быстрее для нажатия */
+    transform: scale(0.97);     
+    transition: transform 0.1s ease; 
+}
+
+.tmdb-logo {
+    padding: 15px 5px;
 }
